@@ -246,7 +246,7 @@ clusterslist=client.get_cluster_list() #fetch list of all the interactive cluste
 
 # COMMAND ----------
 
-#this function will return the currently avaiable function in E2 workspace else it will return "***DBR Runtime version not avaiable***"
+#this function will return the currently avaiable DBR versions in Databricks workspace else it will return "***DBR Runtime version not avaiable***"
 def get_DBR_version(version):
   DBR_versions_list=client.get_cluster_DBR_versions()
   for i in range(len(DBR_versions_list)):
